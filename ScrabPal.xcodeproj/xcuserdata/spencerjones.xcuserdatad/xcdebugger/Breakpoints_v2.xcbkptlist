@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "A8FF65B9-4F01-47AB-8564-F83FD84B4387"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "87756DF2-AE06-4A3A-A19B-D75D5CDF28A3"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ScrabPal/Check/CheckViewModel.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "fetchWordInfo(word:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "87756DF2-AE06-4A3A-A19B-D75D5CDF28A3 - 7a69ee636a065402"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ScrabPal.CheckViewModel.fetchWordInfo(word: Swift.String, completion: (Swift.Result&lt;ScrabPal.DictionaryResponse, ScrabPal.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ScrabPal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spencerjones/Code/personal/ScrabPal/ScrabPal/Check/CheckViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "32"
+                  endingLineNumber = "32"
+                  offsetFromSymbolStart = "642">
+               </Location>
+               <Location
+                  uuid = "87756DF2-AE06-4A3A-A19B-D75D5CDF28A3 - c42fd99b2739d7bc"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in ScrabPal.CheckViewModel.fetchWordInfo(word: Swift.String, completion: (Swift.Result&lt;ScrabPal.DictionaryResponse, ScrabPal.APIError&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "ScrabPal"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/spencerjones/Code/personal/ScrabPal/ScrabPal/Check/CheckViewModel.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "284">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

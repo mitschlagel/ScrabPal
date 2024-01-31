@@ -16,6 +16,11 @@
 		F796B72B2B6AE53E008474E0 /* ScrabPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */; };
 		F796B7352B6AE53E008474E0 /* ScrabPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */; };
 		F796B7372B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */; };
+		F796B7452B6AE658008474E0 /* CheckView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7442B6AE658008474E0 /* CheckView.swift */; };
+		F796B7472B6AE711008474E0 /* CheckViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7462B6AE711008474E0 /* CheckViewModel.swift */; };
+		F796B74A2B6AEABD008474E0 /* HighEmphasisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7492B6AEABD008474E0 /* HighEmphasisButton.swift */; };
+		F796B74D2B6AEE97008474E0 /* Color+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B74C2B6AEE97008474E0 /* Color+Extensions.swift */; };
+		F796B7502B6AF13F008474E0 /* CheckModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B74F2B6AF13F008474E0 /* CheckModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +53,11 @@
 		F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITests.swift; sourceTree = "<group>"; };
 		F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F796B7442B6AE658008474E0 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
+		F796B7462B6AE711008474E0 /* CheckViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckViewModel.swift; sourceTree = "<group>"; };
+		F796B7492B6AEABD008474E0 /* HighEmphasisButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighEmphasisButton.swift; sourceTree = "<group>"; };
+		F796B74C2B6AEE97008474E0 /* Color+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extensions.swift"; sourceTree = "<group>"; };
+		F796B74F2B6AF13F008474E0 /* CheckModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +108,10 @@
 		F796B7132B6AE529008474E0 /* ScrabPal */ = {
 			isa = PBXGroup;
 			children = (
+				F796B74E2B6AF12C008474E0 /* Models */,
+				F796B74B2B6AEE84008474E0 /* Extensions */,
+				F796B7482B6AEA85008474E0 /* Components */,
+				F796B7432B6AE63F008474E0 /* Check */,
 				F796B7142B6AE529008474E0 /* ScrabPalApp.swift */,
 				F796B7162B6AE529008474E0 /* ContentView.swift */,
 				F796B7182B6AE53E008474E0 /* Assets.xcassets */,
@@ -131,6 +145,39 @@
 				F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */,
 			);
 			path = ScrabPalUITests;
+			sourceTree = "<group>";
+		};
+		F796B7432B6AE63F008474E0 /* Check */ = {
+			isa = PBXGroup;
+			children = (
+				F796B7442B6AE658008474E0 /* CheckView.swift */,
+				F796B7462B6AE711008474E0 /* CheckViewModel.swift */,
+			);
+			path = Check;
+			sourceTree = "<group>";
+		};
+		F796B7482B6AEA85008474E0 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F796B7492B6AEABD008474E0 /* HighEmphasisButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F796B74B2B6AEE84008474E0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F796B74C2B6AEE97008474E0 /* Color+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F796B74E2B6AF12C008474E0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F796B74F2B6AF13F008474E0 /* CheckModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -264,9 +311,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				F796B71E2B6AE53E008474E0 /* Persistence.swift in Sources */,
+				F796B7472B6AE711008474E0 /* CheckViewModel.swift in Sources */,
+				F796B74A2B6AEABD008474E0 /* HighEmphasisButton.swift in Sources */,
+				F796B74D2B6AEE97008474E0 /* Color+Extensions.swift in Sources */,
 				F796B7212B6AE53E008474E0 /* ScrabPal.xcdatamodeld in Sources */,
 				F796B7172B6AE529008474E0 /* ContentView.swift in Sources */,
 				F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */,
+				F796B7502B6AF13F008474E0 /* CheckModel.swift in Sources */,
+				F796B7452B6AE658008474E0 /* CheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
