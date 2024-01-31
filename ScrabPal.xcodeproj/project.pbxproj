@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7142B6AE529008474E0 /* ScrabPalApp.swift */; };
+		F796B7172B6AE529008474E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7162B6AE529008474E0 /* ContentView.swift */; };
+		F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796B7182B6AE53E008474E0 /* Assets.xcassets */; };
+		F796B71C2B6AE53E008474E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796B71B2B6AE53E008474E0 /* Preview Assets.xcassets */; };
+		F796B71E2B6AE53E008474E0 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B71D2B6AE53E008474E0 /* Persistence.swift */; };
+		F796B7212B6AE53E008474E0 /* ScrabPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F796B71F2B6AE53E008474E0 /* ScrabPal.xcdatamodeld */; };
+		F796B72B2B6AE53E008474E0 /* ScrabPalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */; };
+		F796B7352B6AE53E008474E0 /* ScrabPalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */; };
+		F796B7372B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F796B7272B6AE53E008474E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F796B7092B6AE529008474E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F796B7102B6AE529008474E0;
+			remoteInfo = ScrabPal;
+		};
+		F796B7312B6AE53E008474E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F796B7092B6AE529008474E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F796B7102B6AE529008474E0;
+			remoteInfo = ScrabPal;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F796B7112B6AE529008474E0 /* ScrabPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrabPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F796B7142B6AE529008474E0 /* ScrabPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalApp.swift; sourceTree = "<group>"; };
+		F796B7162B6AE529008474E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F796B7182B6AE53E008474E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F796B71B2B6AE53E008474E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F796B71D2B6AE53E008474E0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		F796B7202B6AE53E008474E0 /* ScrabPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScrabPal.xcdatamodel; sourceTree = "<group>"; };
+		F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalTests.swift; sourceTree = "<group>"; };
+		F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITests.swift; sourceTree = "<group>"; };
+		F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F796B70E2B6AE529008474E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B7232B6AE53E008474E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B72D2B6AE53E008474E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F796B7082B6AE529008474E0 = {
+			isa = PBXGroup;
+			children = (
+				F796B7132B6AE529008474E0 /* ScrabPal */,
+				F796B7292B6AE53E008474E0 /* ScrabPalTests */,
+				F796B7332B6AE53E008474E0 /* ScrabPalUITests */,
+				F796B7122B6AE529008474E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F796B7122B6AE529008474E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F796B7112B6AE529008474E0 /* ScrabPal.app */,
+				F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */,
+				F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F796B7132B6AE529008474E0 /* ScrabPal */ = {
+			isa = PBXGroup;
+			children = (
+				F796B7142B6AE529008474E0 /* ScrabPalApp.swift */,
+				F796B7162B6AE529008474E0 /* ContentView.swift */,
+				F796B7182B6AE53E008474E0 /* Assets.xcassets */,
+				F796B71D2B6AE53E008474E0 /* Persistence.swift */,
+				F796B71F2B6AE53E008474E0 /* ScrabPal.xcdatamodeld */,
+				F796B71A2B6AE53E008474E0 /* Preview Content */,
+			);
+			path = ScrabPal;
+			sourceTree = "<group>";
+		};
+		F796B71A2B6AE53E008474E0 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F796B71B2B6AE53E008474E0 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F796B7292B6AE53E008474E0 /* ScrabPalTests */ = {
+			isa = PBXGroup;
+			children = (
+				F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */,
+			);
+			path = ScrabPalTests;
+			sourceTree = "<group>";
+		};
+		F796B7332B6AE53E008474E0 /* ScrabPalUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */,
+				F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */,
+			);
+			path = ScrabPalUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F796B7102B6AE529008474E0 /* ScrabPal */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPal" */;
+			buildPhases = (
+				F796B70D2B6AE529008474E0 /* Sources */,
+				F796B70E2B6AE529008474E0 /* Frameworks */,
+				F796B70F2B6AE529008474E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ScrabPal;
+			productName = ScrabPal;
+			productReference = F796B7112B6AE529008474E0 /* ScrabPal.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F796B7252B6AE53E008474E0 /* ScrabPalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalTests" */;
+			buildPhases = (
+				F796B7222B6AE53E008474E0 /* Sources */,
+				F796B7232B6AE53E008474E0 /* Frameworks */,
+				F796B7242B6AE53E008474E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F796B7282B6AE53E008474E0 /* PBXTargetDependency */,
+			);
+			name = ScrabPalTests;
+			productName = ScrabPalTests;
+			productReference = F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F796B72F2B6AE53E008474E0 /* ScrabPalUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalUITests" */;
+			buildPhases = (
+				F796B72C2B6AE53E008474E0 /* Sources */,
+				F796B72D2B6AE53E008474E0 /* Frameworks */,
+				F796B72E2B6AE53E008474E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F796B7322B6AE53E008474E0 /* PBXTargetDependency */,
+			);
+			name = ScrabPalUITests;
+			productName = ScrabPalUITests;
+			productReference = F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F796B7092B6AE529008474E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					F796B7102B6AE529008474E0 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					F796B7252B6AE53E008474E0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F796B7102B6AE529008474E0;
+					};
+					F796B72F2B6AE53E008474E0 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = F796B7102B6AE529008474E0;
+					};
+				};
+			};
+			buildConfigurationList = F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "ScrabPal" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F796B7082B6AE529008474E0;
+			productRefGroup = F796B7122B6AE529008474E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F796B7102B6AE529008474E0 /* ScrabPal */,
+				F796B7252B6AE53E008474E0 /* ScrabPalTests */,
+				F796B72F2B6AE53E008474E0 /* ScrabPalUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F796B70F2B6AE529008474E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F796B71C2B6AE53E008474E0 /* Preview Assets.xcassets in Resources */,
+				F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B7242B6AE53E008474E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B72E2B6AE53E008474E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F796B70D2B6AE529008474E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F796B71E2B6AE53E008474E0 /* Persistence.swift in Sources */,
+				F796B7212B6AE53E008474E0 /* ScrabPal.xcdatamodeld in Sources */,
+				F796B7172B6AE529008474E0 /* ContentView.swift in Sources */,
+				F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B7222B6AE53E008474E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F796B72B2B6AE53E008474E0 /* ScrabPalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F796B72C2B6AE53E008474E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F796B7372B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift in Sources */,
+				F796B7352B6AE53E008474E0 /* ScrabPalUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F796B7282B6AE53E008474E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F796B7102B6AE529008474E0 /* ScrabPal */;
+			targetProxy = F796B7272B6AE53E008474E0 /* PBXContainerItemProxy */;
+		};
+		F796B7322B6AE53E008474E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F796B7102B6AE529008474E0 /* ScrabPal */;
+			targetProxy = F796B7312B6AE53E008474E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F796B7382B6AE53E008474E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F796B7392B6AE53E008474E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F796B73B2B6AE53E008474E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrabPal/Preview Content\"";
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F796B73C2B6AE53E008474E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ScrabPal/Preview Content\"";
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPal;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F796B73E2B6AE53E008474E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrabPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrabPal";
+			};
+			name = Debug;
+		};
+		F796B73F2B6AE53E008474E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrabPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrabPal";
+			};
+			name = Release;
+		};
+		F796B7412B6AE53E008474E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrabPal;
+			};
+			name = Debug;
+		};
+		F796B7422B6AE53E008474E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2X792CPSD3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPalUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ScrabPal;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "ScrabPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F796B7382B6AE53E008474E0 /* Debug */,
+				F796B7392B6AE53E008474E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPal" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F796B73B2B6AE53E008474E0 /* Debug */,
+				F796B73C2B6AE53E008474E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F796B73E2B6AE53E008474E0 /* Debug */,
+				F796B73F2B6AE53E008474E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F796B7412B6AE53E008474E0 /* Debug */,
+				F796B7422B6AE53E008474E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F796B71F2B6AE53E008474E0 /* ScrabPal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F796B7202B6AE53E008474E0 /* ScrabPal.xcdatamodel */,
+			);
+			currentVersion = F796B7202B6AE53E008474E0 /* ScrabPal.xcdatamodel */;
+			path = ScrabPal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = F796B7092B6AE529008474E0 /* Project object */;
+}
