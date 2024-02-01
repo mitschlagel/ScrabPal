@@ -20,16 +20,19 @@ struct HighEmphasisButton: View {
             self.action()
         }) {
             HStack {
-                icon
-                text
+                self.icon
+                self.text
             }
             .foregroundColor(Color.buttonText)
             .padding()
             .background(Color.primary)
             .cornerRadius(10)
-            .padding(.vertical, 12)
+            
         }
+        .frame(maxWidth: .infinity)
+        
     }
+    
 }
 
 struct HighEmphasisButton_Previews: PreviewProvider {

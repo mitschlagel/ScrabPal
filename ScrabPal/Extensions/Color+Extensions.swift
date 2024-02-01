@@ -12,4 +12,5 @@ extension Color {
     static let buttonText = Color.white
     static let primary = Color("primaryColor")
     static let primaryVariant = Color("primaryVariant")
+    static let primaryText = Color("primaryText")
 }

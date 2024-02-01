@@ -14,43 +14,31 @@ struct CheckView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack {
-                    if let errorMessage = viewModel.errorMessage {
-                        Text(errorMessage)
-                            .foregroundColor(.red)
-                            .padding()
-                    }
+                VStack() {
                     TextField("Enter a word", text: $wordToCheck)
                                 .padding()
                     HighEmphasisButton(icon: Image(systemName: "questionmark"), text: Text("Check Word"), action: {
-                        viewModel.getWordInfo(word: wordToCheck)
+                        viewModel.getWordInfo(for: wordToCheck)
                     })
                     if viewModel.isLoading {
                         ProgressView("Loading...")
                             .padding()
-                    } else if let dictionaryResponse = viewModel.dictionaryResponse {
-                        ForEach(dictionaryResponse.meanings, id: \.partOfSpeech) { meaning in
-                            VStack(alignment: .leading) {
-                                Text("Part of Speech: \(meaning.partOfSpeech)")
-                                    .font(.headline)
-
-                                ForEach(meaning.definitions, id: \.definition) { definition in
-                                    Text("Definition: \(definition.definition)")
-                                        .padding(.leading)
-                                    if let example = definition.example {
-                                        Text("Example: \(example)")
-                                            .padding(.leading)
-                                    }
-                                }
-                            }
+                    } else if let errorMessage = viewModel.errorMessage {
+                        Text(errorMessage)
+                            .foregroundColor(.red)
                             .padding()
-                            .background(Color.gray.opacity(0.2))
-                            .cornerRadius(8)
-                            .padding(.vertical, 5)
-                                        }
+                    } else if let dictionaryResponse = viewModel.dictionaryResponse {
+                        VStack {
+                            Text(dictionaryResponse.word.uppercased())
+                                .font(.largeTitle)
+                                .fontWeight(.bold)
+                            Text(dictionaryResponse.meanings.first?.definitions.first?.definition ?? "error")
+                        }
+                        .padding(.top, 24)
                     }
                     Spacer()
                 }
+                .padding(.horizontal, 16)
                 .ignoresSafeArea()
             }
             .navigationTitle(Text("Check"))
