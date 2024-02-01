@@ -27,23 +27,38 @@ struct CheckView: View {
                         Text(errorMessage)
                             .foregroundColor(.red)
                             .padding()
-                    } else if let dictionaryResponse = viewModel.dictionaryResponse {
+                    } else if let dictionary = viewModel.dictionaryResponse {
                         VStack {
-                            Text(dictionaryResponse.word.uppercased())
+                            Text(dictionary.word.uppercased())
                                 .font(.largeTitle)
                                 .fontWeight(.bold)
-                            Text(dictionaryResponse.meanings.first?.definitions.first?.definition ?? "error")
+                            if let meaning = dictionary.meanings.first {
+                                WordDefinition(meaning: meaning)
+                            }
                         }
                         .padding(.top, 24)
                     }
                     Spacer()
                 }
                 .padding(.horizontal, 16)
-                .ignoresSafeArea()
             }
             .navigationTitle(Text("Check"))
         }
         
+    }
+    
+    @ViewBuilder func WordDefinition(meaning: Meaning) -> some View {
+        VStack(alignment: .leading) {
+            Text(meaning.partOfSpeech)
+                .font(.headline)
+            ForEach(meaning.definitions, id: \.id) { def in
+                VStack {
+                    Text(def.definition)
+                        .padding(.bottom, 8)
+                    Text(def.example ?? "")
+                }
+            }
+        }
     }
 }
 

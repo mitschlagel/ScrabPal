@@ -20,14 +20,25 @@ struct Phonetic: Codable {
     let audio: String?
 }
 
-struct Meaning: Codable {
+struct Meaning: Codable, Identifiable {
+    var id: UUID = UUID()
     let partOfSpeech: String
     let definitions: [Definition]
+    
+    enum CodingKeys: String, CodingKey {
+        case partOfSpeech
+        case definitions
+    }
 }
 
 struct Definition: Codable {
+    var id: UUID = UUID()
     let definition: String
     let example: String?
     let synonyms: [String]?
     let antonyms: [String]?
+    
+    enum CodingKeys: String, CodingKey {
+        case definition, example, synonyms, antonyms
+    }
 }
