@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewGameForm: View {
+struct NewGameView: View {
     
     @EnvironmentObject var viewModel: ScoreViewModel
     
@@ -37,8 +37,7 @@ struct NewGameForm: View {
                 Spacer()
             }
             .padding()
-            .navigationTitle("New Game")
-            .navigationBarBackground()
+            
         }
         
     }
@@ -72,5 +71,5 @@ struct ColoredNavigationBar: ViewModifier {
 }
 
 #Preview {
-    NewGameForm().environmentObject(ScoreViewModel())
+    NewGameView().environmentObject(ScoreViewModel())
 }

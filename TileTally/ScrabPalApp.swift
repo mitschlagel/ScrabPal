@@ -1,6 +1,6 @@
 //
-//  ScrabPalApp.swift
-//  ScrabPal
+//  TileTallyApp.swift
+//  TileTally
 //
 //  Created by Spencer Jones on 1/31/24.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct ScrabPalApp: App {
+struct TileTallyApp: App {
     let persistenceController = PersistenceController.shared
 
     var body: some Scene {

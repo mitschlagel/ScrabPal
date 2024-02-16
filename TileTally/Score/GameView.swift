@@ -13,7 +13,6 @@ struct GameView: View {
     
     var body: some View {
         VStack {
-            
             if let game = viewModel.game {
                 HStack(spacing: 20) {
                     // First Column
@@ -73,6 +72,7 @@ struct GameView: View {
                         .cornerRadius(2)
                     }
                 }
+                .foregroundStyle(Color.primaryText)
                 .padding()
             }
             

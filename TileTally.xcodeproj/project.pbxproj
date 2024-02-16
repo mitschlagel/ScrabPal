@@ -11,7 +11,7 @@
 		F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA352B7EE3180007C638 /* ScoreView.swift */; };
 		F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */; };
 		F744023A2B7F23040018AB44 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74402392B7F23040018AB44 /* GameView.swift */; };
-		F768DDDD2B7EE8BD009372EA /* NewGameForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */; };
+		F768DDDD2B7EE8BD009372EA /* NewGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* NewGameView.swift */; };
 		F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7142B6AE529008474E0 /* ScrabPalApp.swift */; };
 		F796B7172B6AE529008474E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7162B6AE529008474E0 /* ContentView.swift */; };
 		F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796B7182B6AE53E008474E0 /* Assets.xcassets */; };
@@ -50,17 +50,17 @@
 		F739BA352B7EE3180007C638 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		F74402392B7F23040018AB44 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
-		F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameForm.swift; sourceTree = "<group>"; };
-		F796B7112B6AE529008474E0 /* ScrabPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrabPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F768DDDC2B7EE8BD009372EA /* NewGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameView.swift; sourceTree = "<group>"; };
+		F796B7112B6AE529008474E0 /* TileTally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileTally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7142B6AE529008474E0 /* ScrabPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalApp.swift; sourceTree = "<group>"; };
 		F796B7162B6AE529008474E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F796B7182B6AE53E008474E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F796B71B2B6AE53E008474E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F796B71D2B6AE53E008474E0 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		F796B7202B6AE53E008474E0 /* ScrabPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ScrabPal.xcdatamodel; sourceTree = "<group>"; };
-		F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabPalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F796B7262B6AE53E008474E0 /* TileTallyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TileTallyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalTests.swift; sourceTree = "<group>"; };
-		F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScrabPalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F796B7302B6AE53E008474E0 /* TileTallyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TileTallyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITests.swift; sourceTree = "<group>"; };
 		F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		F796B7442B6AE658008474E0 /* CheckView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckView.swift; sourceTree = "<group>"; };
@@ -100,7 +100,7 @@
 			children = (
 				F739BA352B7EE3180007C638 /* ScoreView.swift */,
 				F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */,
-				F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */,
+				F768DDDC2B7EE8BD009372EA /* NewGameView.swift */,
 				F74402392B7F23040018AB44 /* GameView.swift */,
 			);
 			path = Score;
@@ -109,9 +109,9 @@
 		F796B7082B6AE529008474E0 = {
 			isa = PBXGroup;
 			children = (
-				F796B7132B6AE529008474E0 /* ScrabPal */,
-				F796B7292B6AE53E008474E0 /* ScrabPalTests */,
-				F796B7332B6AE53E008474E0 /* ScrabPalUITests */,
+				F796B7132B6AE529008474E0 /* TileTally */,
+				F796B7292B6AE53E008474E0 /* TileTallyTests */,
+				F796B7332B6AE53E008474E0 /* TileTallyUITests */,
 				F796B7122B6AE529008474E0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -119,14 +119,14 @@
 		F796B7122B6AE529008474E0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F796B7112B6AE529008474E0 /* ScrabPal.app */,
-				F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */,
-				F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */,
+				F796B7112B6AE529008474E0 /* TileTally.app */,
+				F796B7262B6AE53E008474E0 /* TileTallyTests.xctest */,
+				F796B7302B6AE53E008474E0 /* TileTallyUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F796B7132B6AE529008474E0 /* ScrabPal */ = {
+		F796B7132B6AE529008474E0 /* TileTally */ = {
 			isa = PBXGroup;
 			children = (
 				F739BA342B7EE3030007C638 /* Score */,
@@ -141,7 +141,7 @@
 				F796B71F2B6AE53E008474E0 /* ScrabPal.xcdatamodeld */,
 				F796B71A2B6AE53E008474E0 /* Preview Content */,
 			);
-			path = ScrabPal;
+			path = TileTally;
 			sourceTree = "<group>";
 		};
 		F796B71A2B6AE53E008474E0 /* Preview Content */ = {
@@ -152,21 +152,21 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		F796B7292B6AE53E008474E0 /* ScrabPalTests */ = {
+		F796B7292B6AE53E008474E0 /* TileTallyTests */ = {
 			isa = PBXGroup;
 			children = (
 				F796B72A2B6AE53E008474E0 /* ScrabPalTests.swift */,
 			);
-			path = ScrabPalTests;
+			path = TileTallyTests;
 			sourceTree = "<group>";
 		};
-		F796B7332B6AE53E008474E0 /* ScrabPalUITests */ = {
+		F796B7332B6AE53E008474E0 /* TileTallyUITests */ = {
 			isa = PBXGroup;
 			children = (
 				F796B7342B6AE53E008474E0 /* ScrabPalUITests.swift */,
 				F796B7362B6AE53E008474E0 /* ScrabPalUITestsLaunchTests.swift */,
 			);
-			path = ScrabPalUITests;
+			path = TileTallyUITests;
 			sourceTree = "<group>";
 		};
 		F796B7432B6AE63F008474E0 /* Check */ = {
@@ -206,9 +206,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F796B7102B6AE529008474E0 /* ScrabPal */ = {
+		F796B7102B6AE529008474E0 /* TileTally */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPal" */;
+			buildConfigurationList = F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTally" */;
 			buildPhases = (
 				F796B70D2B6AE529008474E0 /* Sources */,
 				F796B70E2B6AE529008474E0 /* Frameworks */,
@@ -218,14 +218,14 @@
 			);
 			dependencies = (
 			);
-			name = ScrabPal;
+			name = TileTally;
 			productName = ScrabPal;
-			productReference = F796B7112B6AE529008474E0 /* ScrabPal.app */;
+			productReference = F796B7112B6AE529008474E0 /* TileTally.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F796B7252B6AE53E008474E0 /* ScrabPalTests */ = {
+		F796B7252B6AE53E008474E0 /* TileTallyTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalTests" */;
+			buildConfigurationList = F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTallyTests" */;
 			buildPhases = (
 				F796B7222B6AE53E008474E0 /* Sources */,
 				F796B7232B6AE53E008474E0 /* Frameworks */,
@@ -236,14 +236,14 @@
 			dependencies = (
 				F796B7282B6AE53E008474E0 /* PBXTargetDependency */,
 			);
-			name = ScrabPalTests;
+			name = TileTallyTests;
 			productName = ScrabPalTests;
-			productReference = F796B7262B6AE53E008474E0 /* ScrabPalTests.xctest */;
+			productReference = F796B7262B6AE53E008474E0 /* TileTallyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		F796B72F2B6AE53E008474E0 /* ScrabPalUITests */ = {
+		F796B72F2B6AE53E008474E0 /* TileTallyUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalUITests" */;
+			buildConfigurationList = F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTallyUITests" */;
 			buildPhases = (
 				F796B72C2B6AE53E008474E0 /* Sources */,
 				F796B72D2B6AE53E008474E0 /* Frameworks */,
@@ -254,9 +254,9 @@
 			dependencies = (
 				F796B7322B6AE53E008474E0 /* PBXTargetDependency */,
 			);
-			name = ScrabPalUITests;
+			name = TileTallyUITests;
 			productName = ScrabPalUITests;
-			productReference = F796B7302B6AE53E008474E0 /* ScrabPalUITests.xctest */;
+			productReference = F796B7302B6AE53E008474E0 /* TileTallyUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -282,7 +282,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "ScrabPal" */;
+			buildConfigurationList = F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "TileTally" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -295,9 +295,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F796B7102B6AE529008474E0 /* ScrabPal */,
-				F796B7252B6AE53E008474E0 /* ScrabPalTests */,
-				F796B72F2B6AE53E008474E0 /* ScrabPalUITests */,
+				F796B7102B6AE529008474E0 /* TileTally */,
+				F796B7252B6AE53E008474E0 /* TileTallyTests */,
+				F796B72F2B6AE53E008474E0 /* TileTallyUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -345,7 +345,7 @@
 				F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */,
 				F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */,
 				F796B7502B6AF13F008474E0 /* CheckModel.swift in Sources */,
-				F768DDDD2B7EE8BD009372EA /* NewGameForm.swift in Sources */,
+				F768DDDD2B7EE8BD009372EA /* NewGameView.swift in Sources */,
 				F796B7452B6AE658008474E0 /* CheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,12 +372,12 @@
 /* Begin PBXTargetDependency section */
 		F796B7282B6AE53E008474E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F796B7102B6AE529008474E0 /* ScrabPal */;
+			target = F796B7102B6AE529008474E0 /* TileTally */;
 			targetProxy = F796B7272B6AE53E008474E0 /* PBXContainerItemProxy */;
 		};
 		F796B7322B6AE53E008474E0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = F796B7102B6AE529008474E0 /* ScrabPal */;
+			target = F796B7102B6AE529008474E0 /* TileTally */;
 			targetProxy = F796B7312B6AE53E008474E0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -504,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrabPal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TileTally/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X792CPSD3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -518,7 +518,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.tiletally;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -533,7 +533,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"ScrabPal/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"TileTally/Preview Content\"";
 				DEVELOPMENT_TEAM = 2X792CPSD3;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -547,7 +547,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.ScrabPal;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spencer.tiletally;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -571,7 +571,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrabPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrabPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TileTally.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TileTally";
 			};
 			name = Debug;
 		};
@@ -591,7 +591,7 @@
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ScrabPal.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ScrabPal";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TileTally.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/TileTally";
 			};
 			name = Release;
 		};
@@ -634,7 +634,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "ScrabPal" */ = {
+		F796B70C2B6AE529008474E0 /* Build configuration list for PBXProject "TileTally" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F796B7382B6AE53E008474E0 /* Debug */,
@@ -643,7 +643,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPal" */ = {
+		F796B73A2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTally" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F796B73B2B6AE53E008474E0 /* Debug */,
@@ -652,7 +652,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalTests" */ = {
+		F796B73D2B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTallyTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F796B73E2B6AE53E008474E0 /* Debug */,
@@ -661,7 +661,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "ScrabPalUITests" */ = {
+		F796B7402B6AE53E008474E0 /* Build configuration list for PBXNativeTarget "TileTallyUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F796B7412B6AE53E008474E0 /* Debug */,

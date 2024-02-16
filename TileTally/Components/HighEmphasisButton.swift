@@ -23,6 +23,7 @@ struct HighEmphasisButton: View {
             HStack {
                 icon
                 Text(text)
+                    .fontWeight(.bold)
             }
             .foregroundColor(Color.buttonText)
             .frame(maxWidth: .infinity)

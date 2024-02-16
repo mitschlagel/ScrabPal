@@ -19,7 +19,7 @@ struct CheckView: View {
                 VStack() {
                     TextField("Enter a word", text: $wordToCheck)
                                 .padding()
-                    HighEmphasisButton(icon: Image(systemName: "questionmark"), text: "Check Word", action: {
+                    HighEmphasisButton(text: "Check Word", action: {
                         viewModel.getWordInfo(for: wordToCheck)
                     })
                     if viewModel.isLoading {
