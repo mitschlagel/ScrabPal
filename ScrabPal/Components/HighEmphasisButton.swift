@@ -28,7 +28,7 @@ struct HighEmphasisButton: View {
             .frame(maxWidth: .infinity)
             .padding()
             .background(disabled ? SwiftUI.Color.gray : SwiftUI.Color.primary400)
-            .cornerRadius(10)
+            .cornerRadius(2)
             
         }
         .disabled(disabled)

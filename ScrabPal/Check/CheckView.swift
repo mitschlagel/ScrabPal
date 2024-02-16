@@ -8,8 +8,10 @@
 import SwiftUI
 
 struct CheckView: View {
+    
+    @EnvironmentObject var viewModel: CheckViewModel
+    
     @State private var wordToCheck: String = ""
-    @ObservedObject var viewModel: CheckViewModel
     
     var body: some View {
         NavigationView {
@@ -43,6 +45,7 @@ struct CheckView: View {
                 .padding(.horizontal, 16)
             }
             .navigationTitle(Text("Check"))
+            .navigationBarBackground()
         }
         
     }
@@ -64,6 +67,6 @@ struct CheckView: View {
 
 struct CheckView_Previews: PreviewProvider {
     static var previews: some View {
-        CheckView(viewModel: CheckViewModel())
+        CheckView().environmentObject(CheckViewModel())
     }
 }

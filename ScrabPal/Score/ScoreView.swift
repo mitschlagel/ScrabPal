@@ -13,27 +13,14 @@ struct ScoreView: View {
     
     var body: some View {
         if let game = viewModel.game {
-            VStack {
-                Text("Player 1: \(game.playerOne.name), Player 2: \(game.playerTwo.name)")
-                HighEmphasisButton(text: "End Game", action: {viewModel.game = nil})
-                
-                Spacer()
-            }
+            
             
         } else {
             NewGameForm()
-
-//            Button(action: {
-//                viewModel.createGame(playerOne: Player(name: "Bob"), playerTwo: Player(name: "Alice"))
-//            }, label: {
-//                Text("Create Game")
-//            })
         }
     }
 }
 
-struct ScoreView_Previews: PreviewProvider {
-    static var previews: some View {
-        ScoreView()
-    }
+#Preview {
+    ScoreView().environmentObject(ScoreViewModel())
 }

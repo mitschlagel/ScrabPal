@@ -17,7 +17,7 @@ struct NewGameForm: View {
     
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             VStack {
                 Text("Enter player names to start a new game!")
                     .font(.headline)
@@ -25,7 +25,6 @@ struct NewGameForm: View {
                 TextField("Player One", text: $playerOneName)
                     .padding()
                     .textFieldStyle(.roundedBorder)
-
                 TextField("Player Two", text: $playerTwoName)
                     .padding()
                     .textFieldStyle(.roundedBorder)
@@ -35,10 +34,13 @@ struct NewGameForm: View {
                     action: {
                         startGame()
                     })
+                Spacer()
             }
             .padding()
             .navigationTitle("New Game")
+            .navigationBarBackground()
         }
+        
     }
     
     func startGame() {
@@ -46,6 +48,27 @@ struct NewGameForm: View {
         let playerTwo = Player(name: playerTwoName)
         viewModel.createGame(playerOne: playerOne, playerTwo: playerTwo)
     }
+}
+
+extension View {
+    func navigationBarBackground(_ background: Color = Color.primary400) -> some View {
+    return self
+      .modifier(ColoredNavigationBar(background: background))
+  }
+}
+
+struct ColoredNavigationBar: ViewModifier {
+  var background: Color
+  
+  func body(content: Content) -> some View {
+    content
+      .toolbarBackground(
+        background,
+        for: .navigationBar
+      )
+      .toolbarColorScheme(.dark, for: .navigationBar)
+      .toolbarBackground(.visible, for: .navigationBar)
+  }
 }
 
 #Preview {

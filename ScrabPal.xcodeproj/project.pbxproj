@@ -10,6 +10,7 @@
 		F739BA332B7EE2600007C638 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA322B7EE2600007C638 /* Game.swift */; };
 		F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA352B7EE3180007C638 /* ScoreView.swift */; };
 		F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */; };
+		F744023A2B7F23040018AB44 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74402392B7F23040018AB44 /* GameView.swift */; };
 		F768DDDD2B7EE8BD009372EA /* NewGameForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */; };
 		F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7142B6AE529008474E0 /* ScrabPalApp.swift */; };
 		F796B7172B6AE529008474E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7162B6AE529008474E0 /* ContentView.swift */; };
@@ -48,6 +49,7 @@
 		F739BA322B7EE2600007C638 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		F739BA352B7EE3180007C638 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		F74402392B7F23040018AB44 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameForm.swift; sourceTree = "<group>"; };
 		F796B7112B6AE529008474E0 /* ScrabPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrabPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7142B6AE529008474E0 /* ScrabPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalApp.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				F739BA352B7EE3180007C638 /* ScoreView.swift */,
 				F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */,
 				F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */,
+				F74402392B7F23040018AB44 /* GameView.swift */,
 			);
 			path = Score;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */,
 				F796B74A2B6AEABD008474E0 /* HighEmphasisButton.swift in Sources */,
 				F796B74D2B6AEE97008474E0 /* Color+Extensions.swift in Sources */,
+				F744023A2B7F23040018AB44 /* GameView.swift in Sources */,
 				F796B7212B6AE53E008474E0 /* ScrabPal.xcdatamodeld in Sources */,
 				F796B7172B6AE529008474E0 /* ContentView.swift in Sources */,
 				F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */,
