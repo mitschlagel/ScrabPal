@@ -30,13 +30,13 @@ struct NewGameForm: View {
                     
                     
                 }
+                .formStyle(.grouped)
                 HighEmphasisButton(
                     disabled: player1Name.isEmpty || player2Name.isEmpty,
                     text: "Create Game",
                     action: {
                         startGame()
                     })
-            Spacer()
             }
             .navigationTitle("New Game")
         }

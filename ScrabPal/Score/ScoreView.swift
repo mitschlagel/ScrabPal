@@ -15,7 +15,7 @@ struct ScoreView: View {
         if let game = viewModel.game {
             VStack {
                 Text("Player 1: \(game.playerOne.name), Player 2: \(game.playerTwo.name)")
-                Button("End Game", action: {viewModel.game = nil})
+                HighEmphasisButton(text: "End Game", action: {viewModel.game = nil})
                 
                 Spacer()
             }

@@ -25,7 +25,7 @@ struct HighEmphasisButton: View {
                 Text(text)            }
             .foregroundColor(Color.buttonText)
             .padding()
-            .background(Color.primary)
+            .background(disabled ? Color.gray : Color.primary)
             .cornerRadius(10)
             
         }
