@@ -10,32 +10,34 @@ import SwiftUI
 struct GameView: View {
     
     @EnvironmentObject var viewModel: ScoreViewModel
+    @State private var playerOneTurn: String = ""
+    @State private var playerTwoTurn: String = ""
+    @State private var showInputView: InputSheet?
     
     var body: some View {
         VStack {
             if let game = viewModel.game {
-                HStack(spacing: 20) {
+                HStack(spacing: 16) {
                     // First Column
-                    VStack(spacing: 8) {
+                    VStack(spacing: 16) {
                         Text(game.playerOne.name)
                             .font(.headline)
-                        Text("58")
+                        Text(String(viewModel.game?.playerOneScore ?? 0))
                             .font(.largeTitle)
+
+                        HighEmphasisButton(text: "Play", action: {
+                            showInputView = .playerOne
+                        })
+                        
                         List {
-                            HStack {
-                                Text("HELLO")
-                                Spacer()
-                                Text("16")
-                            }
-                            HStack {
-                                Text("CHECK")
-                                Spacer()
-                                Text("23")
-                            }
-                            HStack {
-                                Text("WINNER")
-                                Spacer()
-                                Text("8")
+                            if let words = viewModel.game?.playerOneWords {
+                                ForEach(words) { word in
+                                    HStack {
+                                        Text(word.word)
+                                        Spacer()
+                                        Text(String(word.score))
+                                    }
+                                }
                             }
                         }
                         .font(.footnote)
@@ -44,26 +46,23 @@ struct GameView: View {
                     }
                     
                     // Second Column
-                    VStack(spacing: 8) {
+                    VStack(spacing: 16) {
                         Text(game.playerTwo.name)
                             .font(.headline)
-                        Text("62")
+                        Text(String(viewModel.game?.playerTwoScore ?? 0))
                             .font(.largeTitle)
+                        HighEmphasisButton(text: "Play", action: {
+                            showInputView = .playerTwo
+                        })
                         List {
-                            HStack {
-                                Text("HELLO")
-                                Spacer()
-                                Text("16")
-                            }
-                            HStack {
-                                Text("CHECK")
-                                Spacer()
-                                Text("23")
-                            }
-                            HStack {
-                                Text("WINNER")
-                                Spacer()
-                                Text("8")
+                            if let words = viewModel.game?.playerTwoWords {
+                                ForEach(words) { word in
+                                    HStack {
+                                        Text(word.word)
+                                        Spacer()
+                                        Text(String(word.score))
+                                    }
+                                }
                             }
                         }
                         .font(.footnote)
@@ -80,7 +79,23 @@ struct GameView: View {
             
             Spacer()
         }
+        .sheet(item: $showInputView) { item in
+            switch item {
+            case .playerOne:
+                Text("Player One Input")
+            case .playerTwo:
+                Text("Player Two Input")
+            }
+        }
         .padding()
+    }
+}
+
+enum InputSheet: Identifiable {
+    case playerOne, playerTwo
+    
+    var id: Int {
+        hashValue
     }
 }
 

@@ -22,6 +22,12 @@ struct Player {
     var name: String
 }
 
-struct Word {
+struct Word: Identifiable {
+    var id: UUID = UUID()
+    var word: String
+    var score: Int = 0
     
+    init(_ word: String) {
+        self.word = word
+    }
 }
