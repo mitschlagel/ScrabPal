@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F739BA332B7EE2600007C638 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA322B7EE2600007C638 /* Game.swift */; };
+		F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA352B7EE3180007C638 /* ScoreView.swift */; };
+		F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */; };
+		F768DDDD2B7EE8BD009372EA /* NewGameForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */; };
 		F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7142B6AE529008474E0 /* ScrabPalApp.swift */; };
 		F796B7172B6AE529008474E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7162B6AE529008474E0 /* ContentView.swift */; };
 		F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796B7182B6AE53E008474E0 /* Assets.xcassets */; };
@@ -41,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F739BA322B7EE2600007C638 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F739BA352B7EE3180007C638 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
+		F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewGameForm.swift; sourceTree = "<group>"; };
 		F796B7112B6AE529008474E0 /* ScrabPal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScrabPal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7142B6AE529008474E0 /* ScrabPalApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrabPalApp.swift; sourceTree = "<group>"; };
 		F796B7162B6AE529008474E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -85,6 +93,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F739BA342B7EE3030007C638 /* Score */ = {
+			isa = PBXGroup;
+			children = (
+				F739BA352B7EE3180007C638 /* ScoreView.swift */,
+				F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */,
+				F768DDDC2B7EE8BD009372EA /* NewGameForm.swift */,
+			);
+			path = Score;
+			sourceTree = "<group>";
+		};
 		F796B7082B6AE529008474E0 = {
 			isa = PBXGroup;
 			children = (
@@ -108,6 +126,7 @@
 		F796B7132B6AE529008474E0 /* ScrabPal */ = {
 			isa = PBXGroup;
 			children = (
+				F739BA342B7EE3030007C638 /* Score */,
 				F796B74E2B6AF12C008474E0 /* Models */,
 				F796B74B2B6AEE84008474E0 /* Extensions */,
 				F796B7482B6AEA85008474E0 /* Components */,
@@ -176,6 +195,7 @@
 			isa = PBXGroup;
 			children = (
 				F796B74F2B6AF13F008474E0 /* CheckModel.swift */,
+				F739BA322B7EE2600007C638 /* Game.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -311,13 +331,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				F796B71E2B6AE53E008474E0 /* Persistence.swift in Sources */,
+				F739BA332B7EE2600007C638 /* Game.swift in Sources */,
 				F796B7472B6AE711008474E0 /* CheckViewModel.swift in Sources */,
+				F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */,
 				F796B74A2B6AEABD008474E0 /* HighEmphasisButton.swift in Sources */,
 				F796B74D2B6AEE97008474E0 /* Color+Extensions.swift in Sources */,
 				F796B7212B6AE53E008474E0 /* ScrabPal.xcdatamodeld in Sources */,
 				F796B7172B6AE529008474E0 /* ContentView.swift in Sources */,
+				F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */,
 				F796B7152B6AE529008474E0 /* ScrabPalApp.swift in Sources */,
 				F796B7502B6AF13F008474E0 /* CheckModel.swift in Sources */,
+				F768DDDD2B7EE8BD009372EA /* NewGameForm.swift in Sources */,
 				F796B7452B6AE658008474E0 /* CheckView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

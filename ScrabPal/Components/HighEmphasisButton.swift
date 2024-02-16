@@ -10,25 +10,26 @@ import SwiftUI
 struct HighEmphasisButton: View {
     // Properties
     var icon: Image?
-    var text: Text
+    var disabled: Bool = false
+    var text: String
     var action: () -> Void
 
     // Body
     var body: some View {
         Button(action: {
             // Perform action when the button is tapped
-            self.action()
+            action()
         }) {
             HStack {
-                self.icon
-                self.text
-            }
+                icon
+                Text(text)            }
             .foregroundColor(Color.buttonText)
             .padding()
             .background(Color.primary)
             .cornerRadius(10)
             
         }
+        .disabled(disabled)
         .frame(maxWidth: .infinity)
         
     }
@@ -37,6 +38,6 @@ struct HighEmphasisButton: View {
 
 struct HighEmphasisButton_Previews: PreviewProvider {
     static var previews: some View {
-        HighEmphasisButton(text: Text("Hello"), action: {print("Hello")})
+        HighEmphasisButton(text: "Hello", action: {print("Hello")})
     }
 }

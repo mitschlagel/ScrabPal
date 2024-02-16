@@ -18,7 +18,8 @@ struct ContentView: View {
 
     var body: some View {
             TabView {
-                Text("Score")
+                ScoreView()
+                    .environmentObject(ScoreViewModel())
                     .tabItem {
                         Image(systemName: "list.bullet")
                         Text("Score")
