@@ -4,7 +4,7 @@
 //
 //  Created by Spencer Jones on 1/31/24.
 //
-import AssetsLibrary
+
 import SwiftUI
 
 struct HighEmphasisButton: View {
@@ -22,22 +22,21 @@ struct HighEmphasisButton: View {
         }) {
             HStack {
                 icon
-                Text(text)            }
+                Text(text)
+            }
             .foregroundColor(Color.buttonText)
+            .frame(maxWidth: .infinity)
             .padding()
-            .background(disabled ? Color.gray : Color.primary)
+            .background(disabled ? SwiftUI.Color.gray : SwiftUI.Color.primary400)
             .cornerRadius(10)
             
         }
         .disabled(disabled)
-        .frame(maxWidth: .infinity)
         
     }
     
 }
 
-struct HighEmphasisButton_Previews: PreviewProvider {
-    static var previews: some View {
-        HighEmphasisButton(text: "Hello", action: {print("Hello")})
-    }
+#Preview {
+    HighEmphasisButton(icon: nil, disabled: false, text: "Hello", action: {})
 }

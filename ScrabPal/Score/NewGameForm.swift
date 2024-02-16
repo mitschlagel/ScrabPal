@@ -11,40 +11,43 @@ struct NewGameForm: View {
     
     @EnvironmentObject var viewModel: ScoreViewModel
     
-    @State private var player1Name: String = ""
-    @State private var player2Name: String = ""
+    @State private var playerOneName: String = ""
+    @State private var playerTwoName: String = ""
     
     
     
     var body: some View {
         NavigationView {
             VStack {
-                Form {
-                    Section(header: Text("Player 1")) {
-                        TextField("Enter Player 1's Name", text: $player1Name)
-                    }
-                    
-                    Section(header: Text("Player 2")) {
-                        TextField("Enter Player 2's Name", text: $player2Name)
-                    }
-                    
-                    
-                }
-                .formStyle(.grouped)
+                Text("Enter player names to start a new game!")
+                    .font(.headline)
+                    .foregroundStyle(Color.primaryText)
+                TextField("Player One", text: $playerOneName)
+                    .padding()
+                    .textFieldStyle(.roundedBorder)
+
+                TextField("Player Two", text: $playerTwoName)
+                    .padding()
+                    .textFieldStyle(.roundedBorder)
                 HighEmphasisButton(
-                    disabled: player1Name.isEmpty || player2Name.isEmpty,
+                    disabled: playerOneName.isEmpty || playerTwoName.isEmpty,
                     text: "Create Game",
                     action: {
                         startGame()
                     })
             }
+            .padding()
             .navigationTitle("New Game")
         }
     }
     
     func startGame() {
-        let playerOne = Player(name: player1Name)
-        let playerTwo = Player(name: player2Name)
+        let playerOne = Player(name: playerOneName)
+        let playerTwo = Player(name: playerTwoName)
         viewModel.createGame(playerOne: playerOne, playerTwo: playerTwo)
     }
+}
+
+#Preview {
+    NewGameForm().environmentObject(ScoreViewModel())
 }
