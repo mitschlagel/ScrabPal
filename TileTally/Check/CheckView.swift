@@ -65,6 +65,9 @@ struct CheckView: View {
             .sheet(isPresented: $viewModel.showDefinitionSheet) {
                 DefinitionView(error: viewModel.errorMessage, definition: viewModel.dictionaryResponse)
             }
+            .onDisappear {
+                wordToCheck = ""
+            }
         }
         
     }
