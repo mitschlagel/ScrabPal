@@ -11,6 +11,7 @@ struct Game {
     var id: UUID = UUID()
     var playerOne: Player
     var playerTwo: Player
+    var tilesRemaining: Int = 100
 }
 
 struct Player {

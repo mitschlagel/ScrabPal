@@ -12,59 +12,64 @@ struct CheckView: View {
     @EnvironmentObject var viewModel: CheckViewModel
     
     @State private var wordToCheck: String = ""
+    @State private var showInputAlert: Bool = false
+    @State private var showDefinitionSheet: Bool = false
     
     var body: some View {
         NavigationView {
             ScrollView {
-                VStack() {
-                    TextField("Enter a word", text: $wordToCheck)
+                VStack(spacing: 16) {
+                    TextField("word", text: $wordToCheck)
                                 .padding()
+                                .keyboardType(.alphabet)
                                 .textFieldStyle(.roundedBorder)
-                    HighEmphasisButton(text: "Check Word", action: {
-                        viewModel.getWordInfo(for: wordToCheck)
-                    })
-                    if viewModel.isLoading {
-                        ProgressView("Loading...")
-                            .padding()
-                    } else if let errorMessage = viewModel.errorMessage {
-                        Text(errorMessage)
-                            .foregroundColor(.red)
-                            .padding()
-                    } else if let dictionary = viewModel.dictionaryResponse {
-                        VStack {
-                            Text(dictionary.word.uppercased())
-                                .font(.largeTitle)
-                                .fontWeight(.bold)
-                            if let meaning = dictionary.meanings.first {
-                                WordDefinition(meaning: meaning)
-                            }
+                                .multilineTextAlignment(.center)
+                                .textInputAutocapitalization(.characters)
+                                .textCase(.uppercase)
+                    HighEmphasisButton(disabled: wordToCheck.isEmpty, text: "Submit", action: {
+                        if viewModel.validateWordInput(wordToCheck) {
+                            viewModel.getWordInfo(for: wordToCheck)
+                        } else {
+                            wordToCheck = ""
+                            showInputAlert = true
                         }
-                        .padding(.top, 24)
+                        
+                    })
+                    .alert(isPresented: $showInputAlert) {
+                        Alert(
+                            title: Text("Not A Word"),
+                            message: Text("Definitely not a word, try again."),
+                            dismissButton: .default(Text("OK").foregroundColor(Color.primary400))
+                        )
+                        
                     }
+                    if viewModel.isLoading {
+                        ProgressView("Checking...")
+                            .padding()
+                    }
+                    if viewModel.errorMessage != nil && !(viewModel.errorMessage?.contains("Decoding") ?? false) {
+                        Text(viewModel.errorMessage ?? "Error")
+                            .foregroundColor(.red)
+                            .multilineTextAlignment(.center)
+                            .padding()
+                    }
+                    
                     Spacer()
                 }
+                .padding(.top, 32)
                 .padding(.horizontal, 16)
             }
             .background(Color.backgroundColor)
-            .navigationTitle(Text("Check"))
+            .navigationTitle(Text("Check Words"))
             .navigationBarBackground()
+            .sheet(isPresented: $viewModel.showDefinitionSheet) {
+                DefinitionView(error: viewModel.errorMessage, definition: viewModel.dictionaryResponse)
+            }
         }
         
     }
     
-    @ViewBuilder func WordDefinition(meaning: Meaning) -> some View {
-        VStack(alignment: .leading) {
-            Text(meaning.partOfSpeech)
-                .font(.headline)
-            ForEach(meaning.definitions, id: \.id) { def in
-                VStack {
-                    Text(def.definition)
-                        .padding(.bottom, 8)
-                    Text(def.example ?? "")
-                }
-            }
-        }
-    }
+   
 }
 
 struct CheckView_Previews: PreviewProvider {

@@ -10,6 +10,7 @@ import SwiftUI
 struct GameView: View {
     
     @EnvironmentObject var viewModel: ScoreViewModel
+    
     @State private var playerOneTurn: String = ""
     @State private var playerTwoTurn: String = ""
     @State private var showInputView: InputSheet?
@@ -17,11 +18,11 @@ struct GameView: View {
     var body: some View {
         VStack {
             if let game = viewModel.game {
+                Text("\(game.tilesRemaining) Tiles Remaining")
                 HStack(spacing: 16) {
                     playerColumn(game.playerOne)
                     playerColumn(game.playerTwo)
                 }
-                .foregroundStyle(Color.primaryText)
                 .padding()
             }
             
@@ -29,7 +30,8 @@ struct GameView: View {
             
             Spacer()
         }
-        .ignoresSafeArea()
+        .foregroundStyle(Color.primaryText)
+        .padding(.top, 32)
         .sheet(item: $showInputView) { item in
             switch item {
             case .playerOne:
@@ -79,9 +81,11 @@ struct GameView: View {
         if player == .one {
             viewModel.game?.playerOne.words.append(Word(word, score))
             viewModel.game?.playerOne.score += score
+            viewModel.game?.tilesRemaining -= word.count
         } else {
             viewModel.game?.playerTwo.words.append(Word(word, score))
             viewModel.game?.playerTwo.score += score
+            viewModel.game?.tilesRemaining -= word.count
         }
     }
 }

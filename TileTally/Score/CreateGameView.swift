@@ -19,7 +19,7 @@ struct CreateGameView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Text("Enter player names to start a new game!")
+                Text("Who's playing?")
                     .font(.headline)
                     .foregroundStyle(Color.primaryText)
                 TextField("Player One", text: $playerOneName)

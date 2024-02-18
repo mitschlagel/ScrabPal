@@ -33,9 +33,11 @@ class CheckViewModel: ObservableObject {
         @Published private(set) var dictionaryResponse: DictionaryResponse?
         @Published private(set) var isLoading = false
         @Published private(set) var errorMessage: String?
+        @Published var showDefinitionSheet: Bool = false
 
     private func fetchDictionaryInformation(for word: String, completion: @escaping (Result<[DictionaryResponse], APIError>) -> Void) {
-        
+        // Where is best place to reset error?
+        self.errorMessage = nil
         guard let url = URL(string: "https://api.dictionaryapi.dev/api/v2/entries/en/\(word)") else {
             completion(.failure(.invalidURL))
             return
@@ -72,12 +74,22 @@ class CheckViewModel: ObservableObject {
                 case .success(let response):
                     self.dictionaryResponse = response.first
                     self.isLoading = false
+                    self.showDefinitionSheet = true
                 case .failure(let error):
                     self.errorMessage = error.localizedDescription
                     self.isLoading = false
+                    if self.errorMessage?.contains("Decoding") == true {
+                        self.showDefinitionSheet = true
+                    }
                 }
             }
         }
+    }
+    
+    func validateWordInput(_ input: String) -> Bool {
+        let letterRegex = "^[a-zA-Z]+$"
+        let letterTest = NSPredicate(format:"SELF MATCHES %@", letterRegex)
+        return letterTest.evaluate(with: input)
     }
     
     func debugPrintJson(_ jsonData: Data) {

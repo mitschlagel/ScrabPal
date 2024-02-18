@@ -16,13 +16,13 @@ struct ContentView: View {
                     .environmentObject(ScoreViewModel())
                     .tabItem {
                         Image(systemName: "list.bullet")
-                        Text("Score")
+                        Text("Keep Score")
                     }
                 CheckView()
                     .environmentObject(CheckViewModel())
                     .tabItem {
                         Image(systemName: "checkmark")
-                        Text("Check")
+                        Text("Check Words")
                     }
                 Text("History")
                     .background(Color.backgroundColor)
