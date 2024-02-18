@@ -80,11 +80,12 @@ struct GameView: View {
             Spacer()
         }
         .sheet(item: $showInputView) { item in
+            
             switch item {
             case .playerOne:
-                Text("Player One Input")
+                InputView()
             case .playerTwo:
-                Text("Player Two Input")
+                InputView()
             }
         }
         .padding()
