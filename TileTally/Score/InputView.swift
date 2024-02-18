@@ -11,7 +11,7 @@ import SwiftUI
 struct InputView: View {
     
     var player: Player?
-    var onSubmit: (String, Int) -> Void
+    var onSubmit: (PlayerRole, String, Int) -> Void
     
     @State private var wordInput: String = ""
     @State private var scoreInput: String = ""
@@ -49,23 +49,20 @@ struct InputView: View {
                     disabled: wordInput.isEmpty || scoreInput.isEmpty,
                     text: "Submit",
                     action: {
-                        if let scoreValue = Int(scoreInput), validateWordInput(wordInput) {
+                        if let scoreValue = Int(scoreInput), let player = player?.role, validateWordInput(wordInput) {
                             self.score = scoreValue
-                            onSubmit(wordInput, scoreValue)
+                            onSubmit(player, wordInput, scoreValue)
                             dismiss()
                         } else {
                             print("invalid")
                         }
                     })
-                HighEmphasisButton(text: "Cancel", action: {dismiss()})
+                MediumEmphasisButton(text: "Cancel", action: {dismiss()})
                 Spacer()
             }
-            
             .padding()
-            
         }
         .background(Color.backgroundColor)
-        
     }
     
     private func validateWordInput(_ input: String) -> Bool {
@@ -76,7 +73,7 @@ struct InputView: View {
 }
 
 #Preview {
-    InputView(player: Player(role: .one, name: "Bob"), onSubmit: { word, score in
-            print(word, score)
+    InputView(player: Player(role: .one, name: "Bob"), onSubmit: { player, word, score in
+            print(player, word, score)
     })
 }

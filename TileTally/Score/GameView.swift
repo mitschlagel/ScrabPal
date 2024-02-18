@@ -33,12 +33,12 @@ struct GameView: View {
         .sheet(item: $showInputView) { item in
             switch item {
             case .playerOne:
-                InputView(player: viewModel.game?.playerOne) { word, score in
-                    handleInput(word: word, score: score)
+                InputView(player: viewModel.game?.playerOne) { player, word, score in
+                    handleScore(for: player, word: word, score: score)
                 }
             case .playerTwo:
-                InputView(player: viewModel.game?.playerTwo) { word, score in
-                    handleInput(word: word, score: score)
+                InputView(player: viewModel.game?.playerTwo) { player, word, score in
+                    handleScore(for: player, word: word, score: score)
                 }
             }
         }
@@ -70,14 +70,19 @@ struct GameView: View {
             }
             .font(.footnote)
             .listStyle(.plain)
-            .border(Color.primary400, width: 2)
+            
             .cornerRadius(2)
         }
     }
     
-    private func handleInput(word: String, score: Int) {
-        viewModel.game?.playerOne.words.append(Word(word, score))
-        viewModel.game?.playerOne.score += score
+    private func handleScore(for player: PlayerRole, word: String, score: Int) {
+        if player == .one {
+            viewModel.game?.playerOne.words.append(Word(word, score))
+            viewModel.game?.playerOne.score += score
+        } else {
+            viewModel.game?.playerTwo.words.append(Word(word, score))
+            viewModel.game?.playerTwo.score += score
+        }
     }
 }
 
