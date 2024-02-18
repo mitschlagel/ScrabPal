@@ -9,27 +9,32 @@ import SwiftUI
 
 struct MainView: View {
 
+    init() {
+        UITabBar.appearance().backgroundColor = UIColor(Color.scrabbleTile)
+        }
 
     var body: some View {
             TabView {
-                ScoreView()
-                    .environmentObject(ScoreViewModel())
-                    .tabItem {
-                        Image(systemName: "list.bullet")
-                        Text("Keep Score")
-                    }
-                CheckView()
-                    .environmentObject(CheckViewModel())
-                    .tabItem {
-                        Image(systemName: "checkmark")
-                        Text("Check Words")
-                    }
-//                Text("History")
-//                    .background(Color.backgroundColor)
-//                    .tabItem {
-//                        Image(systemName: "clock.arrow.circlepath")
-//                        Text("History")
-//                    }
+                Group {
+                    ScoreView()
+                        .environmentObject(ScoreViewModel())
+                        .tabItem {
+                            Image(systemName: "list.bullet")
+                            Text("Keep Score")
+                        }
+                    CheckView()
+                        .environmentObject(CheckViewModel())
+                        .tabItem {
+                            Image(systemName: "checkmark")
+                            Text("Check Words")
+                        }
+    //                Text("History")
+    //                    .background(Color.backgroundColor)
+    //                    .tabItem {
+    //                        Image(systemName: "clock.arrow.circlepath")
+    //                        Text("History")
+    //                    }
+                }
             }
             .tint(Color.primary400)
     }
