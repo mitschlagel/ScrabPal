@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct MainView: View {
 
 
     var body: some View {
@@ -24,12 +24,12 @@ struct ContentView: View {
                         Image(systemName: "checkmark")
                         Text("Check Words")
                     }
-                Text("History")
-                    .background(Color.backgroundColor)
-                    .tabItem {
-                        Image(systemName: "clock.arrow.circlepath")
-                        Text("History")
-                    }
+//                Text("History")
+//                    .background(Color.backgroundColor)
+//                    .tabItem {
+//                        Image(systemName: "clock.arrow.circlepath")
+//                        Text("History")
+//                    }
             }
             .tint(Color.primary400)
     }
@@ -37,6 +37,6 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        MainView()
     }
 }
