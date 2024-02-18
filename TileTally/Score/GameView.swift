@@ -79,13 +79,17 @@ struct GameView: View {
             
             Spacer()
         }
+        .ignoresSafeArea()
         .sheet(item: $showInputView) { item in
-            
             switch item {
             case .playerOne:
-                InputView()
+                InputView(player: viewModel.game?.playerOne) { word, score in
+                    print(word, score)
+                }
             case .playerTwo:
-                InputView()
+                InputView(player: viewModel.game?.playerTwo) { word, score in
+                    print(word, score)
+                }
             }
         }
         .padding()

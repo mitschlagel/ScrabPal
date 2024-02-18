@@ -17,10 +17,12 @@ struct ScoreView: View {
                 GameView()
                     .navigationTitle("TileTally")
                     .navigationBarBackground()
+                    .background(Color.backgroundColor)
             } else {
-                NewGameView()
+                CreateGameView()
                     .navigationTitle("TileTally")
                     .navigationBarBackground()
+                    .background(Color.backgroundColor)
             }
                 
         }

@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NewGameView: View {
+struct CreateGameView: View {
     
     @EnvironmentObject var viewModel: ScoreViewModel
     
@@ -34,8 +34,16 @@ struct NewGameView: View {
                     action: {
                         startGame()
                     })
+                Text("Built by Spencer Jones in 2024")
+                    .font(.caption2)
+                    .foregroundStyle(Color.primaryText)
+                    .padding(.top, 16)
                 Spacer()
+                
+                    
             }
+            .padding(.top, 32)
+            .multilineTextAlignment(.center)
             .padding()
             
         }
@@ -71,5 +79,5 @@ struct ColoredNavigationBar: ViewModifier {
 }
 
 #Preview {
-    NewGameView().environmentObject(ScoreViewModel())
+    CreateGameView().environmentObject(ScoreViewModel())
 }

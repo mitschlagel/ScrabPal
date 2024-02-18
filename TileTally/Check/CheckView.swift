@@ -19,6 +19,7 @@ struct CheckView: View {
                 VStack() {
                     TextField("Enter a word", text: $wordToCheck)
                                 .padding()
+                                .textFieldStyle(.roundedBorder)
                     HighEmphasisButton(text: "Check Word", action: {
                         viewModel.getWordInfo(for: wordToCheck)
                     })
@@ -44,6 +45,7 @@ struct CheckView: View {
                 }
                 .padding(.horizontal, 16)
             }
+            .background(Color.backgroundColor)
             .navigationTitle(Text("Check"))
             .navigationBarBackground()
         }

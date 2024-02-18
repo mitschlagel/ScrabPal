@@ -25,6 +25,7 @@ struct ContentView: View {
                         Text("Check")
                     }
                 Text("History")
+                    .background(Color.backgroundColor)
                     .tabItem {
                         Image(systemName: "clock.arrow.circlepath")
                         Text("History")
