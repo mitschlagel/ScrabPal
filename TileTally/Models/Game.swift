@@ -11,15 +11,14 @@ struct Game {
     var id: UUID = UUID()
     var playerOne: Player
     var playerTwo: Player
-    var playerOneWords: [Word] = []
-    var playerTwoWords: [Word] = []
-    var playerOneScore: Int = 0
-    var playerTwoScore: Int = 0
 }
 
 struct Player {
     var id: UUID = UUID()
+    var role: PlayerRole
     var name: String
+    var words: [Word] = []
+    var score: Int = 0
 }
 
 struct Word: Identifiable {
@@ -27,7 +26,12 @@ struct Word: Identifiable {
     var word: String
     var score: Int = 0
     
-    init(_ word: String) {
+    init(_ word: String, _ score: Int) {
         self.word = word
+        self.score = score
     }
+}
+
+enum PlayerRole {
+    case one, two
 }

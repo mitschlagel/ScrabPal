@@ -34,7 +34,7 @@ struct CreateGameView: View {
                     action: {
                         startGame()
                     })
-                Text("Built by Spencer Jones in 2024")
+                Text("built mitschlagel 2024")
                     .font(.caption2)
                     .foregroundStyle(Color.primaryText)
                     .padding(.top, 16)
@@ -51,8 +51,8 @@ struct CreateGameView: View {
     }
     
     func startGame() {
-        let playerOne = Player(name: playerOneName)
-        let playerTwo = Player(name: playerTwoName)
+        let playerOne = Player(role: .one, name: playerOneName)
+        let playerTwo = Player(role: .two, name: playerTwoName)
         viewModel.createGame(playerOne: playerOne, playerTwo: playerTwo)
     }
 }

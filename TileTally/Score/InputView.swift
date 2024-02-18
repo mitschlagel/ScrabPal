@@ -21,10 +21,10 @@ struct InputView: View {
     
     var body: some View {
         VStack {
-            VStack {
-                Text("Enter your word and score:")
+            VStack(spacing: 16) {
+                Text(player?.name ?? "")
                     .font(.headline)
-                    .foregroundStyle(Color.primaryText)
+                    .foregroundStyle(Color.primaryText)                   
                 VStack {
                     TextField("WORD", text: $wordInput)
                         .textFieldStyle(.roundedBorder)
@@ -76,7 +76,7 @@ struct InputView: View {
 }
 
 #Preview {
-    InputView(player: Player(name: "Bob"), onSubmit: { word, score in
+    InputView(player: Player(role: .one, name: "Bob"), onSubmit: { word, score in
             print(word, score)
     })
 }

@@ -13,6 +13,7 @@
 		F744023A2B7F23040018AB44 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74402392B7F23040018AB44 /* GameView.swift */; };
 		F768DDDD2B7EE8BD009372EA /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* CreateGameView.swift */; };
 		F77DF0712B81C2750000A3F2 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77DF0702B81C2750000A3F2 /* InputView.swift */; };
+		F77DF0772B81DAC60000A3F2 /* Eurostile.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F77DF0762B81DAC60000A3F2 /* Eurostile.ttf */; };
 		F796B7152B6AE529008474E0 /* TileTallyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7142B6AE529008474E0 /* TileTallyApp.swift */; };
 		F796B7172B6AE529008474E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F796B7162B6AE529008474E0 /* ContentView.swift */; };
 		F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F796B7182B6AE53E008474E0 /* Assets.xcassets */; };
@@ -52,6 +53,7 @@
 		F768DDDC2B7EE8BD009372EA /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
 		F77DF0702B81C2750000A3F2 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		F77DF0722B81C8560000A3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		F77DF0762B81DAC60000A3F2 /* Eurostile.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Eurostile.ttf; path = ../../../../../Downloads/Eurostile.ttf; sourceTree = "<group>"; };
 		F796B7112B6AE529008474E0 /* TileTally.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TileTally.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F796B7142B6AE529008474E0 /* TileTallyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileTallyApp.swift; sourceTree = "<group>"; };
 		F796B7162B6AE529008474E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -106,6 +108,15 @@
 			path = Score;
 			sourceTree = "<group>";
 		};
+		F77DF0752B81D9C20000A3F2 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				F77DF0762B81DAC60000A3F2 /* Eurostile.ttf */,
+				F796B7182B6AE53E008474E0 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		F796B7082B6AE529008474E0 = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +140,7 @@
 		F796B7132B6AE529008474E0 /* TileTally */ = {
 			isa = PBXGroup;
 			children = (
+				F77DF0752B81D9C20000A3F2 /* Assets */,
 				F77DF0722B81C8560000A3F2 /* Info.plist */,
 				F739BA342B7EE3030007C638 /* Score */,
 				F796B74E2B6AF12C008474E0 /* Models */,
@@ -137,7 +149,6 @@
 				F796B7432B6AE63F008474E0 /* Check */,
 				F796B7142B6AE529008474E0 /* TileTallyApp.swift */,
 				F796B7162B6AE529008474E0 /* ContentView.swift */,
-				F796B7182B6AE53E008474E0 /* Assets.xcassets */,
 				F796B71A2B6AE53E008474E0 /* Preview Content */,
 			);
 			path = TileTally;
@@ -307,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F796B71C2B6AE53E008474E0 /* Preview Assets.xcassets in Resources */,
+				F77DF0772B81DAC60000A3F2 /* Eurostile.ttf in Resources */,
 				F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
