@@ -13,7 +13,6 @@ struct CheckView: View {
     
     @State private var wordToCheck: String = ""
     @State private var showInputAlert: Bool = false
-    @State private var showDefinitionSheet: Bool = false
     
     var body: some View {
         NavigationView {
@@ -59,17 +58,31 @@ struct CheckView: View {
                 .padding(.top, 32)
                 .padding(.horizontal, 16)
             }
+            .onDisappear {
+                wordToCheck = ""
+            }
             .background(Color.backgroundColor)
             .navigationTitle(Text("Check Words"))
             .navigationBarBackground()
             .sheet(isPresented: $viewModel.showDefinitionSheet) {
-                DefinitionView(error: viewModel.errorMessage, definition: viewModel.dictionaryResponse)
-            }
-            .onDisappear {
-                wordToCheck = ""
+                NavigationStack {
+                    DefinitionView(wordToCheck: wordToCheck,
+                                   error: viewModel.errorMessage,
+                                   definition: viewModel.dictionaryResponse)
+                        .toolbar {
+                            ToolbarItem {
+                                Button(action: {
+                                    viewModel.showDefinitionSheet = false
+                                }, label: {
+                                    Image(systemName: "xmark.circle")
+                                        .foregroundStyle(Color.primary400)
+                                        .font(.title)
+                                })
+                            }
+                        }
+                }
             }
         }
-        
     }
     
    
