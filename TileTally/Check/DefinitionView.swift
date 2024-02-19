@@ -9,6 +9,7 @@ import SwiftUI
 
 struct DefinitionView: View {
     
+    var wordToCheck: String
     var error: String?
     var definition: DictionaryResponse?
     
@@ -17,6 +18,9 @@ struct DefinitionView: View {
            if errorMessage.contains("Decoding") {
                VStack {
                    VStack(spacing: 16) {
+                       Text(wordToCheck)
+                           .font(.largeTitle)
+                           .fontWeight(.bold)
                        Image(systemName: "x.square")
                            .font(Font.system(size: 100))
                            .foregroundStyle(Color.red)
@@ -39,15 +43,13 @@ struct DefinitionView: View {
        } else if let definition = definition {
            VStack {
                VStack(spacing: 16) {
+                   Text(wordToCheck)
+                       .font(.largeTitle)
+                       .fontWeight(.bold)
                    Image(systemName: "checkmark.square")
                        .foregroundStyle(Color.green)
                        .font(Font.system(size: 100))
-                   Text(definition.word.uppercased())
-                       .font(.largeTitle)
-                       .fontWeight(.bold)
-                   if let meaning = definition.meanings.first {
-                       showWordDefinition(meaning: meaning)
-                   }
+                    showWordDefinitions(meanings: definition.meanings)
                }
                .padding(.top, 32)
                .padding()
@@ -58,22 +60,27 @@ struct DefinitionView: View {
        }
     }
     
-    @ViewBuilder func showWordDefinition(meaning: Meaning) -> some View {
+    @ViewBuilder func showWordDefinitions(meanings: [Meaning]) -> some View {
         VStack(spacing: 8) {
-            Text(meaning.partOfSpeech)
-                .font(.headline)
-            ForEach(meaning.definitions, id: \.id) { def in
-                VStack(spacing: 8) {
-                    Text(def.definition)
-                    Text(def.example ?? "")
+            ForEach(meanings, id: \.id) { meaning in
+                VStack(alignment: .leading) {
+                    Text(meaning.partOfSpeech)
+                        .font(.headline)
+                    
+                    if let def = meaning.definitions.first?.definition {
+                        Text(def)
+                        
+                    } else {
+                        Text("No definition available")
+                    }
                 }
+                
                 
             }
         }
-        .multilineTextAlignment(.center)
     }
 }
 
 #Preview {
-    DefinitionView()
+    DefinitionView(wordToCheck: "foo")
 }
