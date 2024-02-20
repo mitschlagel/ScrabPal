@@ -11,6 +11,7 @@
 		F739BA362B7EE3180007C638 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA352B7EE3180007C638 /* ScoreView.swift */; };
 		F739BA382B7EE32A0007C638 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */; };
 		F744023A2B7F23040018AB44 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F74402392B7F23040018AB44 /* GameView.swift */; };
+		F757E71D2B846EC50035D322 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F757E71C2B846EC50035D322 /* Launch Screen.storyboard */; };
 		F768DDDD2B7EE8BD009372EA /* CreateGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F768DDDC2B7EE8BD009372EA /* CreateGameView.swift */; };
 		F77DF0712B81C2750000A3F2 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77DF0702B81C2750000A3F2 /* InputView.swift */; };
 		F77DF0792B82761B0000A3F2 /* MediumEmphasisButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F77DF0782B82761B0000A3F2 /* MediumEmphasisButton.swift */; };
@@ -52,6 +53,7 @@
 		F739BA352B7EE3180007C638 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 		F739BA372B7EE32A0007C638 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		F74402392B7F23040018AB44 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
+		F757E71C2B846EC50035D322 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		F768DDDC2B7EE8BD009372EA /* CreateGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGameView.swift; sourceTree = "<group>"; };
 		F77DF0702B81C2750000A3F2 /* InputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
 		F77DF0722B81C8560000A3F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 		F796B7132B6AE529008474E0 /* TileTally */ = {
 			isa = PBXGroup;
 			children = (
+				F7F77B0C2B8463F7001CB92E /* Main */,
 				F77DF0752B81D9C20000A3F2 /* Assets */,
 				F77DF0722B81C8560000A3F2 /* Info.plist */,
 				F739BA342B7EE3030007C638 /* Score */,
@@ -152,7 +155,6 @@
 				F796B7482B6AEA85008474E0 /* Components */,
 				F796B7432B6AE63F008474E0 /* Check */,
 				F796B7142B6AE529008474E0 /* TileTallyApp.swift */,
-				F796B7162B6AE529008474E0 /* MainView.swift */,
 				F796B71A2B6AE53E008474E0 /* Preview Content */,
 			);
 			path = TileTally;
@@ -217,6 +219,15 @@
 				F739BA322B7EE2600007C638 /* Game.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		F7F77B0C2B8463F7001CB92E /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				F757E71C2B846EC50035D322 /* Launch Screen.storyboard */,
+				F796B7162B6AE529008474E0 /* MainView.swift */,
+			);
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +336,7 @@
 			files = (
 				F796B71C2B6AE53E008474E0 /* Preview Assets.xcassets in Resources */,
 				F796B7192B6AE53E008474E0 /* Assets.xcassets in Resources */,
+				F757E71D2B846EC50035D322 /* Launch Screen.storyboard in Resources */,
 				F77DF07D2B82956F0000A3F2 /* Eurostile.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -531,7 +543,7 @@
 				INFOPLIST_FILE = TileTally/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -563,7 +575,7 @@
 				INFOPLIST_FILE = TileTally/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
