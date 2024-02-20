@@ -15,12 +15,12 @@ struct ScoreView: View {
         NavigationStack {
             if viewModel.game != nil {
                 GameView()
-                    .navigationTitle("TileTally")
+                    .navigationTitle("Tile Tally")
                     .navigationBarBackground()
                     .background(Color.backgroundColor)
             } else {
                 CreateGameView()
-                    .navigationTitle("TileTally")
+                    .navigationTitle("New Game")
                     .navigationBarBackground()
                     .background(Color.backgroundColor)
             }
